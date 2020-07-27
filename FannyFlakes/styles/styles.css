@@ -1,0 +1,446 @@
+@import url(fonts.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1447px;
+  color: #1d4c8b;
+  font-family: "Poppins reg";
+  background-color: #fff8ee;
+}
+
+a {
+  text-decoration: none;
+  color: #1d4c8b;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  font: 17px/39.37px Poppins;
+}
+
+.main {
+  background-color: #f5d1c9;
+  height: 930px;
+}
+.main header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main nav {
+  padding: 83px;
+}
+.main nav a {
+  padding-right: 61px;
+  padding-left: 29px;
+}
+.main .logo {
+  position: absolute;
+  top: 67px;
+  left: 97px;
+}
+.main .basket {
+  position: absolute;
+  top: 84px;
+  right: 105px;
+}
+
+.greets {
+  display: flex;
+  position: relative;
+  text-align: center;
+}
+.greets .greetsContent {
+  margin: auto;
+}
+.greets h1 {
+  padding-top: 27px;
+  font: 145px/145.24px Poppins;
+}
+.greets p {
+  padding: 52px 0 0 0;
+  font-family: Sacramento;
+  font-size: 69px;
+  font-weight: 400;
+  line-height: 69.46px;
+}
+
+.main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 33px;
+}
+
+.menu {
+  background: url(/assets/Vector_Backgorund_Decoration.png) center center/cover
+    no-repeat;
+  height: -webkit-fill-available;
+  z-index: 1;
+}
+
+.menu-holder {
+  position: relative;
+  top: 365;
+  margin: 0 224px 94px;
+  text-align: center;
+  border: 2px solid #1d4c8b;
+  background-color: #fff8ee;
+}
+.menu-holder .title h1 {
+  font: 81px/52.55px "Poppins bold";
+  font-variant: small-caps;
+  letter-spacing: 8.07px;
+  padding-top: 82px;
+}
+.menu-holder .title p {
+  padding: 26px 0 73px 0;
+  font-size: 21px;
+}
+.menu-holder .subtitle {
+  font: 27px/20.93px Poppins;
+  text-transform: uppercase;
+  letter-spacing: 7.42px;
+  background-color: #f5d1c9;
+  border: 2px solid #1d4c8b;
+  padding: 27px 0;
+  margin: 0 101px 84px;
+}
+.menu-holder .menu-items {
+  margin: 0 104px 35px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #1d4c8b;
+}
+.menu-holder .menu-items .item {
+  padding-right: 270px;
+  margin-bottom: 66px;
+  font: 22px/26px "Poppins bold";
+}
+.menu-holder .menu-items .item ul h5 {
+  text-align: left;
+  letter-spacing: 2.78px;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+}
+.menu-holder .menu-items .item .checkmark {
+  position: absolute;
+  top: 0px;
+  left: 333px;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #1d4c8b;
+}
+.menu-holder .menu-items .item input:checked ~ .checkmark {
+  background-color: #f5d1c9;
+}
+.menu-holder .menu-items .item li {
+  position: relative;
+  list-style: none;
+  text-align: left;
+  font: 16px Poppins reg;
+}
+.menu-holder .menu-items .item li .price {
+  position: absolute;
+  left: 271px;
+}
+.menu-holder .menu-items .item li input {
+  position: absolute;
+  top: 0px;
+  left: 335px;
+  opacity: 0;
+  z-index: 1;
+}
+.menu-holder .submenu {
+  font: 17px/23.84px Poppins;
+  margin: 0 104px 35px;
+  border-bottom: 2px solid #1d4c8b;
+}
+.menu-holder .submenu p {
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+.menu-holder .submenu ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.menu-holder .submenu li {
+  flex-grow: 1;
+  position: relative;
+  list-style: none;
+}
+.menu-holder .submenu li .checkmark {
+  position: absolute;
+  top: 2px;
+  right: 25px;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #1d4c8b;
+}
+.menu-holder .submenu li input {
+  position: absolute;
+  top: 3px;
+  right: 25px;
+  opacity: 0;
+  z-index: 1;
+}
+.menu-holder .submenu li input:checked ~ .checkmark {
+  background-color: #f5d1c9;
+}
+.menu-holder .button {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0 67px 0;
+}
+.menu-holder button {
+  width: 271px;
+  height: 76px;
+  text-align: center;
+  padding: 17px;
+  font-size: 20px;
+  line-height: 45px;
+  background-color: #1d4c8b;
+  color: white;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-radius: 40px;
+  border: none;
+}
+.menu-holder button:focus {
+  outline: none;
+}
+.menu-holder:before {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: -150px;
+  border-top: 2px solid #1d4c8b;
+  border-left: 2px solid #1d4c8b;
+  transform: rotate(-45deg);
+}
+
+.menu-holder:after {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: -100px;
+  border-top: 2px solid #1d4c8b;
+  border-right: 2px solid #1d4c8b;
+  transform: rotate(45deg);
+}
+
+.combos {
+  position: relative;
+  top: 400px;
+  padding-bottom: 127px;
+  background-color: #a8baca;
+}
+
+.combos .combos-heading {
+  text-align: center;
+  padding-top: 86px;
+}
+.combos .combos-heading h1 {
+  font: 55px/43px "Poppins bold";
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.combos .combos-heading p {
+  padding: 22px 0 60px;
+  font-size: 21px;
+}
+.combos .combos-card-holder {
+  display: flex;
+  justify-content: center;
+}
+.combos .combos-card {
+  padding: 52px;
+  margin: 0 23px;
+  text-align: center;
+  border: 2px solid #1d4c8b;
+  background-color: #f5d1c9;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.combos .combos-card h2 {
+  font: 19px/17px "Poppins bold";
+}
+.combos .combos-card span {
+  font-family: "Poppins bold";
+}
+.combos .combos-card .combo-card-button {
+  width: 215px;
+  height: 60px;
+  margin: 69px 0 2px;
+  text-align: center;
+  padding: 22px;
+  background-color: #f5d1c9;
+  font: 16px/13px Poppins;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-radius: 40px;
+  border: 2px solid #1d4c8b;
+}
+.combos .combos-card .combo-card-button:hover {
+  background-color: #fff8ee;
+}
+
+.history {
+  position: relative;
+  top: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f5d1c9;
+}
+.history .img-holder2 {
+  width: 722px;
+  background-color: #a8baca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.history .history-desc,
+.history .creators {
+  width: 722px;
+  background-color: #f5d1c9;
+}
+.history .history-desc {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 69px;
+}
+.history .history-desc .history-desc-container h1 {
+  padding: 0 139px 55px;
+  font: 69px/45px "Poppins bold";
+  font-variant: small-caps;
+  letter-spacing: 8.07px;
+}
+.history .history-desc .history-desc-container p {
+  padding: 0 139px 35px;
+  font-size: 21px;
+}
+.history .creators {
+  height: 721px;
+  padding: 153px 0;
+}
+.history .creators h1 {
+  margin: 0 128px 78px;
+  font: 69px/45px "Poppins bold";
+  font-variant: small-caps;
+  letter-spacing: 8.07px;
+}
+.history .creators .creator {
+  display: flex;
+}
+.history .creators .creator .creator-img {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background-color: #a8baca;
+  border-radius: 50%;
+  margin: 0px 38px 60px 114px;
+}
+.history .creators .creator .creator-img img {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.history .creators .creator .creator-desc h2 {
+  font: 25px Poppins;
+}
+.history .creators .creator .creator-desc p {
+  font-size: 21px;
+}
+
+.contacts {
+  position: relative;
+  top: 390px;
+  background-color: #fff8ee;
+  text-transform: uppercase;
+}
+.contacts .info {
+  display: flex;
+  justify-content: center;
+}
+.contacts .info h2 {
+  font: 20px Poppins;
+  margin-bottom: 15px;
+}
+.contacts .info .adress,
+.contacts .info .open-hours,
+.contacts .info .tel,
+.contacts .info .email {
+  padding: 133px 59px 67px;
+}
+.contacts .img,
+.contacts .input,
+.contacts .button,
+.contacts .social-media {
+  padding: 58px 0 0 0;
+}
+.contacts .social-media img {
+  padding-right: 20px;
+}
+.contacts .input input {
+  border: 2px solid #1d4c8b;
+  background-color: #fff8ee;
+  padding: 10px 100px 10px 0;
+  margin-top: 29px;
+}
+.contacts .input input::placeholder {
+  padding-left: 10px;
+  color: #1d4c8b;
+}
+.contacts .button button {
+  padding: 17px 59px;
+  margin-top: 27px;
+  font-size: 11px;
+  background-color: #1d4c8b;
+  color: white;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-radius: 40px;
+  border: none;
+}
+
+.contacts .button button:focus {
+  outline: none;
+}
+
+footer {
+  position: relative;
+  top: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a8baca;
+  height: 73px;
+}
+
+@media only screen and (max-width: 600px) {
+  .history,
+  .contacts,
+  footer,
+  .combos {
+    top: 800px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    max-width: 1447px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

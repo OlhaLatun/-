@@ -1,0 +1,451 @@
+@import "fonts.css";
+
+$main-blue-color: #1d4c8b;
+$main-bg-color: #f5d1c9;
+$second-bg-color: #fff8ee;
+
+@mixin blueButton {
+  background-color: $main-blue-color;
+  color: white;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-radius: 40px;
+  border: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1447px;
+  color: $main-blue-color;
+  font-family: "Poppins reg";
+  background-color: $second-bg-color;
+}
+
+a {
+  text-decoration: none;
+  color: #1d4c8b;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  font: 17px/39.37px Poppins;
+}
+
+.main {
+  background-color: $main-bg-color;
+  height: 930px;
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    padding: 83px;
+    a {
+      padding-right: 61px;
+      padding-left: 29px;
+    }
+  }
+  .logo {
+    position: absolute;
+    top: 67px;
+    left: 97px;
+  }
+  .basket {
+    position: absolute;
+    top: 84px;
+    right: 105px;
+  }
+}
+
+.greets {
+  display: flex;
+  position: relative;
+  text-align: center;
+  .greetsContent {
+    margin: auto;
+  }
+  h1 {
+    padding-top: 27px;
+    font: 145px/145.24px Poppins;
+  }
+  p {
+    padding: 52px 0 0 0;
+    font-family: Sacramento;
+    font-size: 69px;
+    font-weight: 400;
+    line-height: 69.46px;
+  }
+}
+
+.main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 33px;
+}
+
+.menu {
+  background: url(/assets/Vector_Backgorund_Decoration.png) center center/cover
+    no-repeat;
+  height: -webkit-fill-available;
+  z-index: 1;
+}
+
+.menu-holder {
+  position: relative;
+  top: 365;
+  margin: 0 224px 94px;
+  text-align: center;
+  border: 2px solid $main-blue-color;
+  background-color: $second-bg-color;
+  .title {
+    h1 {
+      font: 81px/52.55px "Poppins bold";
+      font-variant: small-caps;
+      letter-spacing: 8.07px;
+      padding-top: 82px;
+    }
+    p {
+      padding: 26px 0 73px 0;
+      font-size: 21px;
+    }
+  }
+  .subtitle {
+    font: 27px/20.93px Poppins;
+    text-transform: uppercase;
+    letter-spacing: 7.42px;
+    background-color: $main-bg-color;
+    border: 2px solid $main-blue-color;
+    padding: 27px 0;
+    margin: 0 101px 84px;
+  }
+  .menu-items {
+    margin: 0 104px 35px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid $main-blue-color;
+    .item {
+      padding-right: 270px;
+      margin-bottom: 66px;
+      font: 22px/26px "Poppins bold";
+      ul {
+        h5 {
+          text-align: left;
+          letter-spacing: 2.78px;
+          text-transform: uppercase;
+          padding-bottom: 14px;
+        }
+      }
+      .checkmark {
+        position: absolute;
+        top: 7px;
+        left: 333px;
+        height: 16px;
+        width: 16px;
+        border: 1px solid $main-blue-color;
+      }
+
+      input:checked ~ .checkmark {
+        background-color: $main-bg-color;
+      }
+    }
+    .item li {
+      position: relative;
+      list-style: none;
+      text-align: left;
+      font: 16px Poppins reg;
+      .price {
+        position: absolute;
+        left: 271px;
+      }
+      input {
+        position: absolute;
+        top: 9px;
+        left: 335px;
+        opacity: 0;
+        z-index: 1;
+      }
+    }
+  }
+  .submenu {
+    font: 17px/23.84px Poppins;
+    margin: 0 104px 35px;
+    border-bottom: 2px solid $main-blue-color;
+    p {
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      margin-bottom: 23px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 35px;
+    }
+    li {
+      flex-grow: 1;
+      position: relative;
+      list-style: none;
+      .checkmark {
+        position: absolute;
+        top: 2px;
+        right: 3px;
+        height: 16px;
+        width: 16px;
+        border: 1px solid $main-blue-color;
+      }
+      input {
+        position: absolute;
+        top: 3px;
+        right: 5px;
+        opacity: 0;
+        z-index: 1;
+      }
+      input:checked ~ .checkmark {
+        background-color: $main-bg-color;
+      }
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 67px 0;
+  }
+  button {
+    width: 271px;
+    height: 76px;
+    text-align: center;
+    padding: 17px;
+    font-size: 20px;
+    line-height: 45px;
+
+    @include blueButton;
+  }
+}
+
+.menu-holder:before {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: -150px;
+  border-top: 2px solid $main-blue-color;
+  border-left: 2px solid $main-blue-color;
+  transform: rotate(-45deg);
+}
+
+.menu-holder:after {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: -100px;
+  border-top: 2px solid $main-blue-color;
+  border-right: 2px solid $main-blue-color;
+  transform: rotate(45deg);
+}
+
+.combos {
+  position: relative;
+  top: 600px;
+  padding-bottom: 127px;
+  background-color: #a8baca;
+
+  .combos-heading {
+    text-align: center;
+    padding-top: 86px;
+    h1 {
+      font: 55px/43px "Poppins bold";
+      letter-spacing: 8px;
+      text-transform: uppercase;
+    }
+    p {
+      padding: 22px 0 60px;
+      font-size: 21px;
+    }
+  }
+
+  .combos-card-holder {
+    display: flex;
+    justify-content: center;
+  }
+
+  .combos-card {
+    padding: 52px;
+    margin: 0 23px;
+    text-align: center;
+    border: 2px solid $main-blue-color;
+    background-color: $main-bg-color;
+    text-transform: uppercase;
+    font-size: 18px;
+    h2 {
+      font: 19px/17px "Poppins bold";
+    }
+    span {
+      font-family: "Poppins bold";
+    }
+
+    .combo-card-button {
+      width: 215px;
+      height: 60px;
+      margin: 69px 0 2px;
+      text-align: center;
+      padding: 22px;
+      background-color: $main-bg-color;
+      font: 16px/13px Poppins;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      border-radius: 40px;
+      border: 2px solid $main-blue-color;
+    }
+
+    .combo-card-button:hover {
+      background-color: $second-bg-color;
+    }
+  }
+}
+
+.history {
+  position: relative;
+  top: 590px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $main-bg-color;
+
+  .img-holder2 {
+    width: 722px;
+    background-color: #a8baca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .history-desc,
+  .creators {
+    width: 722px;
+    background-color: $main-bg-color;
+  }
+
+  .history-desc {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 69px;
+    .history-desc-container {
+      h1 {
+        padding: 0 139px 55px;
+        font: 69px/45px "Poppins bold";
+        font-variant: small-caps;
+        letter-spacing: 8.07px;
+      }
+      p {
+        padding: 0 139px 35px;
+        font-size: 21px;
+      }
+    }
+  }
+
+  .creators {
+    height: 721px;
+    padding: 153px 0;
+    h1 {
+      margin: 0 128px 78px;
+      font: 69px/45px "Poppins bold";
+      font-variant: small-caps;
+      letter-spacing: 8.07px;
+    }
+    .creator {
+      display: flex;
+      .creator-img {
+        position: relative;
+
+        width: 110px;
+        height: 110px;
+
+        background-color: #a8baca;
+        border-radius: 50%;
+        margin: 0px 38px 60px 114px;
+        img {
+          position: absolute;
+          top: 8px;
+          left: 8px;
+        }
+      }
+      .creator-desc {
+        h2 {
+          font: 25px Poppins;
+        }
+        p {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
+
+.contacts {
+  position: relative;
+  top: 590px;
+  background-color: $second-bg-color;
+  text-transform: uppercase;
+  .info {
+    display: flex;
+    justify-content: center;
+    h2 {
+      font: 20px Poppins;
+      margin-bottom: 15px;
+    }
+    .adress,
+    .open-hours,
+    .tel,
+    .email {
+      padding: 133px 59px 67px;
+    }
+  }
+
+  .img,
+  .input,
+  .button,
+  .social-media {
+    padding: 58px 0 0 0;
+  }
+
+  .social-media img {
+    padding-right: 20px;
+  }
+
+  .input input {
+    border: 2px solid $main-blue-color;
+    background-color: $second-bg-color;
+    padding: 10px 100px 10px 0;
+    margin-top: 29px;
+  }
+  .input input::placeholder {
+    padding-left: 10px;
+    color: $main-blue-color;
+  }
+
+  .button button {
+    padding: 17px 59px;
+    margin-top: 27px;
+    font-size: 11px;
+    @include blueButton;
+  }
+}
+
+footer {
+  position: relative;
+  top: 590px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a8baca;
+  height: 73px;
+}
